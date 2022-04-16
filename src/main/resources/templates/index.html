@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HERE ARE MY BABIES</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="d-flex justify-content-around">
+                <div class="row">
+                    <div class="col">
+                        <h1><strong>I REALLY LOVE <span data-th-text="${media}"></span> SO MUCH</strong></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-4 mb-3" data-th-each="url : ${urlList}">
+                    <img data-th-src="${url}" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row-mt-3 mb-5">
+                <div class="col d-flex justify-content-end">
+                    <a href="/" class="btn btn-info btn-lg">My other babies</a>
+                </div>
+            </div>
+        
+
+        <!-- <div class="row">
+            <div class="col d-flex justify-content-end">
+                <a href="/" class="btn btn-danger btn-lg">See my other babies</a>
+            </div>
+        </div> -->
+        </div>
+    </body>
+</html>
