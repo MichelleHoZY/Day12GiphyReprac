@@ -1,5 +1,5 @@
 name: Compile, test, deploy
-on: [ " push " ]
+on: [ "push" ]
 env:
   GIPHY_API_KEY: ${{ secrets.giphy_api_key }}
 jobs:
